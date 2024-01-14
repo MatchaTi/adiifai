@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
+import Navbar from "@/components/layout/Navbar";
+import Image from "next/image";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -18,9 +20,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksand.className} bg-neutral-200 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200`}
+        className={`${quicksand.className} text-sm bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="headings hidden p-4 bg-light-bg dark:bg-dark-bg lg:block">Adi Muhammad Syifai Portfolio</div>
+          <Image
+            className="hidden w-full h-32 2xl:h-72 object-cover object-center lg:block"
+            width={1920}
+            height={1080}
+            src={"/blue-wallpaper.png"}
+            alt="Blue Wallpaper"
+          />
+          <div className="w-full max-w-5xl mx-auto p-4 lg:flex lg:gap-16 lg:mt-8">
+            <div className="sticky top-0 lg:top-16 lg:h-full lg:w-[550px]">
+              <Navbar />
+            </div>
+            <div className="lg:-mt-32">
+              {children}
+            </div>
+          </div>
+        </Providers>
       </body>
     </html>
   );
