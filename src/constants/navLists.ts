@@ -17,6 +17,6 @@ export const navLists = [
   {
     name: 'contact',
     path: '/contact',
-    icon: 'fluent:clover-16-regular',
+    icon: 'mingcute:send-plane-line',
   },
 ];
