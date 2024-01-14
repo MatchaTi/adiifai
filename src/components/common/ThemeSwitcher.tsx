@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import useHasMounted from "@/hooks/useHasMounted";
+import { Icon } from "@iconify/react";
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
@@ -11,10 +12,14 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className="px-4 py-2 rounded bg-neutral-800 dark:bg-neutral-200"
+      className="p-2 rounded-full bg-light-bg border border-light-secondary dark:bg-dark-bg dark:border-dark-secondary"
       onClick={() => setTheme(theme == "light" ? "dark" : "light")}
     >
-      Button
+      <Icon
+        icon={theme == "light"
+          ? "line-md:moon-alt-to-sunny-outline-loop-transition"
+          : "line-md:sunny-outline-to-moon-alt-loop-transition"}
+      />
     </button>
   );
 }
