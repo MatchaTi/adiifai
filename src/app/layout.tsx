@@ -20,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksand.className} text-sm bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text`}
+        className={`${quicksand.className} pb-4 text-sm bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text`}
       >
         <Providers>
-          <div className="headings hidden p-4 bg-light-bg dark:bg-dark-bg lg:block">Adi Muhammad Syifai Portfolio</div>
+          <div className="headings hidden p-4 bg-light-bg dark:bg-dark-bg lg:block">
+            Adi Muhammad Syifai Portfolio
+          </div>
           <Image
             className="hidden w-full h-32 2xl:h-72 object-cover object-center lg:block"
             width={1920}
@@ -35,7 +37,7 @@ export default function RootLayout({
             <div className="pt-4 bg-light-bg sticky top-0 lg:top-16 lg:h-full lg:max-w-[200px] lg:w-full lg:pt-0 dark:bg-dark-bg">
               <Navbar />
             </div>
-            <div className="lg:-mt-32">
+            <div className="lg:-mt-32 w-full">
               {children}
             </div>
           </div>
