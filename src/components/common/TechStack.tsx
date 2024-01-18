@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 export default function TechStack() {
   return (
-    <div className="lg:flex lg:gap-4 lg:items-start">
+    <div className="lg:flex lg:items-start lg:justify-between">
       {techStack.map(({label,icon,list},index) => (
         <div
           key={index}
