@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 export default function Hobby() {
   return (
-    <ul className="flex gap-2 items-center justify-between">
+    <ul className="flex flex-col gap-2 lg:items-center lg:justify-between lg:flex-row">
       {hobbies.map(({ name, icon }, index) => (
         <li
           key={index}

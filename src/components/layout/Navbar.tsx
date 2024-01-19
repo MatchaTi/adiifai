@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="divide-y divide-light-accent dark:divide-dark-accent">
       <div className="pb-4">
-        <div className="mb-2 flex items-center gap-2">
+        <div className="mb-4 flex items-center gap-2">
           <div className="w-5 aspect-square rounded overflow-hidden">
             <Image
               className="w-full h-full object-cover object-center"
@@ -32,10 +32,11 @@ export default function Navbar() {
             <Icon icon="ph:x" />
           </button>
         </div>
-        <div>Badge</div>
-        <ThemeSwitcher />
+          <ThemeSwitcher />
       </div>
-      <ul className={`${isOpen ? "block" : "hidden"} headings pt-3 pb-2 lg:block`}>
+      <ul
+        className={`${isOpen ? "block" : "hidden"} headings pt-3 pb-2 lg:block`}
+      >
         {navLists.map(({ name, path, icon }, index) => (
           <Link href={path} key={index} className="w-full">
             <li
@@ -55,7 +56,9 @@ export default function Navbar() {
         <span>with</span>
         <span className="text-red-500 animate-pulse">❤</span>
         <span>by</span>
-        <span className="hover:dark:text-neutral-400 cursor-pointer">Adi Ifai</span>
+        <span className="hover:dark:text-neutral-400 cursor-pointer">
+          Adi Ifai
+        </span>
       </div>
     </nav>
   );
