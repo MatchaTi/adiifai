@@ -10,6 +10,7 @@ export default function ListContact() {
       {contacts.map(({ label, icon, link }, index) => (
         <ListContainer
           index={index}
+          key={index}
         >
           <a href={link} target="_blank" className="p-4 bg-light-secondary rounded dark:bg-dark-secondary flex items-center gap-2 hover:bg-light-accent dark:hover:bg-dark-accent hover:gap-4">
             <Icon icon={icon} fontSize={24} />

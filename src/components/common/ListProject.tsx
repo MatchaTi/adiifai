@@ -12,6 +12,7 @@ export default function ListProject() {
       {projects.map(({ link, image, title, techStack }, index) => (
         <ListContainer
           index={index}
+          key={index}
           className="w-full overflow-hidden rounded border border-light-accent dark:border-dark-accent"
         >
           <a

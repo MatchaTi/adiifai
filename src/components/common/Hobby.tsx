@@ -10,6 +10,7 @@ export default function Hobby() {
       {hobbies.map(({ name, icon }, index) => (
         <ListContainer
           index={index}
+          key={index}
           className="py-2 flex-1 flex items-center justify-center gap-2 rounded border border-light-accent dark:border-dark-accent"
         >
           <Icon icon={icon} />

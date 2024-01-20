@@ -10,6 +10,7 @@ export default function TechStack() {
       {techStack.map(({ label, icon, list }, index) => (
         <ListContainer
           index={index}
+          key={index}
           className="pl-4 p-2 border-l border-light-accent dark:border-dark-accent lg:bg-light-secondary lg:rounded-lg lg:border-none dark:lg:bg-dark-secondary"
         >
           <div className="headings flex items-center gap-1">
