@@ -85,7 +85,7 @@ export default function Home() {
       </div>
       <div className="mb-4 space-y-2">
         <h1 className="headings text-2xl">
-          Hi, Folks<span className="wave ml-2"></span>
+          Hi, Folks<span className="wave ml-2">👋</span>
         </h1>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 font-semibold">
@@ -133,14 +133,14 @@ export default function Home() {
           user satisfaction.
         </p>
         <p>
-          Creativity knows no boundaries, and that's how I found joy in
+          Creativity knows no boundaries, and thats how I found joy in
           wandering the world of design and coding. I believe that every project
           is a stage for voicing extraordinary ideas and crafting unforgettable
           works.
         </p>
       </div>
       <h2 className="mb-4 headings text-2xl">
-        Hobbies<span className="wave ml-2"></span>
+        Hobbies<span className="wave ml-2">🤞</span>
       </h2>
       <Hobby />
     </FadeUpContainer>

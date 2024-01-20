@@ -32,7 +32,7 @@ export default function Contact() {
       </div>
       <div className="mb-4 space-y-2">
         <h1 className="headings text-2xl">
-          Let's Connect<span className="wave ml-2"></span>
+          Lets Connect<span className="wave ml-2">🙏</span>
         </h1>
       </div>
       <div className="mb-4 leading-8">

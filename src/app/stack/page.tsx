@@ -25,7 +25,7 @@ export default function Stack() {
       <div className="mb-4 space-y-2">
         <h1 className="headings text-2xl">
           Software I use, and the tech stack that I
-          use<span className="wave ml-2"></span>
+          use<span className="wave ml-2">👉</span>
         </h1>
       </div>
       <div className="mb-4 leading-8">
