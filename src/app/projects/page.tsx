@@ -6,7 +6,6 @@ export const metadata = {
   description: "Personal Website Portfolio",
 };
 
-
 export default function Projects() {
   return (
     <FadeUpContainer>
@@ -33,13 +32,17 @@ export default function Projects() {
       </div>
       <div className="mb-4 space-y-2">
         <h1 className="headings text-2xl">
-          Projects<span className="wave ml-2">👏</span>
+          Projects<span className="wave ml-2">✍️</span>
         </h1>
       </div>
       <div className="mb-4 leading-8">
         <p>
-          I’m always open to collaborate on a project or hear about an
-          opportunity!
+          Through these latest projects, I continue to develop my skills and dig
+          deeper into areas that interest me. I am proud to be able to
+          contribute to the achievement of project goals and deliver solutions
+          that bring benefits to users. I hope that these projects can provide
+          an overview of my abilities and potential in facing future project
+          challenges.
         </p>
       </div>
       <ListProject />

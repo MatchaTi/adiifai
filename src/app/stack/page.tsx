@@ -4,7 +4,7 @@ import TechStack from "@/components/common/TechStack";
 export const metadata = {
   title: "Stack | AdiIfai",
   description: "Personal Website Portfolio",
-}
+};
 
 export default function Stack() {
   return (
@@ -25,8 +25,17 @@ export default function Stack() {
       <div className="mb-4 space-y-2">
         <h1 className="headings text-2xl">
           Software I use, and the tech stack that I
-          use<span className="wave ml-2">✍️</span>
+          use<span className="wave ml-2">👉</span>
         </h1>
+      </div>
+      <div className="mb-4 leading-8">
+        <p>
+          I am always eager to adapt to new technologies and ready to face new
+          challenges in future projects. I believe that the combination of
+          skills and tools that I have and master can make a meaningful
+          contribution to achieving project goals and help create innovative and
+          effective solutions.
+        </p>
       </div>
       <TechStack />
     </FadeUpContainer>
