@@ -1,8 +1,15 @@
+import FadeUpContainer from "@/components/common/FadeUpContainer";
 import ListProject from "@/components/common/ListProject";
+
+export const metadata = {
+  title: "Projects | AdiIfai",
+  description: "Personal Website Portfolio",
+};
+
 
 export default function Projects() {
   return (
-    <main>
+    <FadeUpContainer>
       <div className="hidden headings lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +43,6 @@ export default function Projects() {
         </p>
       </div>
       <ListProject />
-    </main>
+    </FadeUpContainer>
   );
 }
