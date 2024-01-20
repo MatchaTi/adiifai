@@ -4,16 +4,14 @@ import { projects } from "@/constants/projects";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ListContainer from "./ListContainer";
 
 export default function ListProject() {
   return (
     <ul className="w-full grid gap-4 items-center lg:grid-cols-2 ">
       {projects.map(({ link, image, title, techStack }, index) => (
-        <motion.li
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.3, delay: 0.3 * index }}
-          key={index}
+        <ListContainer
+          index={index}
           className="w-full overflow-hidden rounded border border-light-accent dark:border-dark-accent"
         >
           <a
@@ -48,7 +46,7 @@ export default function ListProject() {
               </ul>
             </div>
           </a>
-        </motion.li>
+        </ListContainer>
       ))}
     </ul>
   );

@@ -2,13 +2,14 @@
 
 import { techStack } from "@/constants/techStack";
 import { Icon } from "@iconify/react";
+import ListContainer from "./ListContainer";
 
 export default function TechStack() {
   return (
-    <div className="lg:flex lg:items-start lg:justify-between">
-      {techStack.map(({label,icon,list},index) => (
-        <div
-          key={index}
+    <ul className="lg:flex lg:items-start lg:justify-between">
+      {techStack.map(({ label, icon, list }, index) => (
+        <ListContainer
+          index={index}
           className="pl-4 p-2 border-l border-light-accent dark:border-dark-accent lg:bg-light-secondary lg:rounded-lg lg:border-none dark:lg:bg-dark-secondary"
         >
           <div className="headings flex items-center gap-1">
@@ -26,8 +27,8 @@ export default function TechStack() {
               </div>
             </div>
           ))}
-        </div>
+        </ListContainer>
       ))}
-    </div>
+    </ul>
   );
 }
