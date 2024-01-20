@@ -85,7 +85,7 @@ export default function Home() {
       </div>
       <div className="mb-4 space-y-2">
         <h1 className="headings text-2xl">
-          Hi, Folks<span className="wave ml-2">👋</span>
+          Hi, Folks<span className="wave ml-2"></span>
         </h1>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 font-semibold">
@@ -140,7 +140,7 @@ export default function Home() {
         </p>
       </div>
       <h2 className="mb-4 headings text-2xl">
-        Hobbies<span className="wave ml-2">🤞</span>
+        Hobbies<span className="wave ml-2"></span>
       </h2>
       <Hobby />
     </FadeUpContainer>
