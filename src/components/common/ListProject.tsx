@@ -23,14 +23,15 @@ export default function ListProject() {
               initial={{ filter: "blur(20px)" }}
               animate={{ filter: "blur(0px)" }}
               transition={{ duration: 0.5, delay: 0.3 * index }}
-              className="w-full overflow-hidden"
+              className="w-full h-40 overflow-hidden"
             >
               <Image
                 src={`${image}`}
                 alt={title}
                 width={500}
                 height={300}
-                className="object-cover w-full hover:scale-110"
+                className="object-cover object-center w-full h-full hover:scale-110"
+                loading="lazy"
               />
             </motion.div>
             <div className="p-2 bg-light-secondary dark:bg-dark-secondary">
