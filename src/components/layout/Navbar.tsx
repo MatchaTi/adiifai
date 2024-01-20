@@ -42,7 +42,7 @@ export default function Navbar() {
             <li
               className={`${
                 pathName == path && "bg-light-secondary dark:bg-dark-secondary"
-              } capitalize font-medium mb-[2px] flex items-center gap-2 p-2 rounded hover:bg-light-secondary dark:hover:bg-dark-secondary`}
+              } capitalize font-medium mb-[2px] flex items-center gap-2 p-2 rounded hover:bg-light-secondary dark:hover:bg-dark-secondary hover:gap-4`}
             >
               <Icon icon={icon} />
               <span>{name}</span>
