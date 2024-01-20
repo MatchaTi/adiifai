@@ -7,6 +7,7 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { Hamburger } from "../common/Hamburger";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,22 +24,34 @@ export default function Navbar() {
               width={1080}
               height={1080}
               alt="Profile Image"
+              loading="lazy"
             />
           </div>
           <span className="headings flex-1 lg:flex-none">
             Adi Muhammad Syifai
           </span>
-          <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-            <Icon icon="ph:x" />
-          </button>
+          <div className="lg:hidden">
+            <Hamburger
+              isOpen={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+              color="#fff"
+              transition={{  duration: 0.2 }}
+              strokeWidth={2}
+            />
+          </div>
         </div>
-          <ThemeSwitcher />
+        <ThemeSwitcher />
       </div>
       <ul
         className={`${isOpen ? "block" : "hidden"} headings pt-3 pb-2 lg:block`}
       >
         {navLists.map(({ name, path, icon }, index) => (
-          <Link href={path} key={index} className="w-full">
+          <Link
+            href={path}
+            key={index}
+            className="w-full"
+            onClick={() => setIsOpen(false)}
+          >
             <li
               className={`${
                 pathName == path && "bg-light-secondary dark:bg-dark-secondary"
@@ -50,7 +63,7 @@ export default function Navbar() {
           </Link>
         ))}
       </ul>
-      <div className="hidden pt-4 lg:flex lg:items-center lg:gap-1">
+      <div className="hidden pt-4 lg:block lg:space-x-1">
         <span>©</span>
         <span>{new Date().getFullYear()}</span>
         <span>with</span>
