@@ -1,8 +1,14 @@
+import FadeUpContainer from "@/components/common/FadeUpContainer";
 import ListContact from "@/components/common/ListContact";
+
+export const metadata = {
+  title: "Contact | AdiIfai",
+  description: "Personal Website Portfolio",
+};
 
 export default function Contact() {
   return (
-    <main>
+    <FadeUpContainer>
       <div className="hidden headings lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +42,6 @@ export default function Contact() {
         </p>
       </div>
       <ListContact />
-    </main>
+    </FadeUpContainer>
   );
 }

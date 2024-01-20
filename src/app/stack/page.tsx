@@ -1,8 +1,14 @@
+import FadeUpContainer from "@/components/common/FadeUpContainer";
 import TechStack from "@/components/common/TechStack";
+
+export const metadata = {
+  title: "Stack | AdiIfai",
+  description: "Personal Website Portfolio",
+}
 
 export default function Stack() {
   return (
-    <main>
+    <FadeUpContainer>
       <div className="hidden headings lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +29,6 @@ export default function Stack() {
         </h1>
       </div>
       <TechStack />
-    </main>
+    </FadeUpContainer>
   );
 }

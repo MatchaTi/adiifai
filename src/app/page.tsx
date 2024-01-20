@@ -1,8 +1,9 @@
+import FadeUpContainer from "@/components/common/FadeUpContainer";
 import Hobby from "@/components/common/Hobby";
 
 export default function Home() {
   return (
-    <main>
+    <FadeUpContainer>
       <div className="hidden headings lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -142,6 +143,6 @@ export default function Home() {
         Hobbies<span className="wave ml-2">🤞</span>
       </h2>
       <Hobby />
-    </main>
+    </FadeUpContainer>
   );
 }
