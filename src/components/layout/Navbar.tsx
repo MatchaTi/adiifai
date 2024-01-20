@@ -30,15 +30,17 @@ export default function Navbar() {
           <span className="headings flex-1 lg:flex-none">
             Adi Muhammad Syifai
           </span>
-          <div className="lg:hidden">
-            <Hamburger
-              isOpen={isOpen}
-              onClick={() => setIsOpen(!isOpen)}
-              color="#fff"
-              transition={{  duration: 0.2 }}
-              strokeWidth={2}
+          <button
+            type="button"
+            className="lg:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <Icon
+              icon={isOpen
+                ? "line-md:menu-to-close-alt-transition"
+                : "line-md:close-to-menu-transition"}
             />
-          </div>
+          </button>
         </div>
         <ThemeSwitcher />
       </div>
